@@ -5,11 +5,36 @@
 //laboratorium 2
 #include <iostream>
 using namespace std;
-int main()
-{
-    cout << "Hello World!\n";
-    
+int main() {  // kod 02_01
+    cout << "i<=10" << endl;
+    for (int i = 0; i <= 10; i++) {
+        cout << i << endl;
+    }
+
+    cout << endl;
+    cout << "[5,7]" << endl;
+    for (int i = 5; i <= 7; i++) {
+        cout << i << endl;
+    }
+
+    cout << "\n[5,7):" << endl;
+    for (int i = 5; i < 7; i++) {
+        cout << i << endl;
+    }
+
+    cout << "\n[0,10]" << endl;
+    for (int i = 0; i <= 10; i+=2) {
+        cout << i << endl;
+    }
+
+    cout << "\n10 -> 0" << endl;
+    for (int i = 10; i >= 0; i--) {
+        cout << i << endl;
+    }
+    cout << "Koniec programu" << endl;
 }
+
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
