@@ -189,22 +189,17 @@ int main() {
 #include <iostream>
 using namespace std;
 int main() {
-    int n, licznik;
-    licznik = 0;
-    do {
-        cout << "Wprowadz liczbe calkowita z zakresu [0,100]: ";
-        cin >> n;
+    int a, b;
+    cout << "Wprowadz a: ";
+    cin >> a;
+    cout << "\nWprowadz b: ";
+    cin >> b;
 
-        if (n <= 100 && n >= 0) {
-            for (int i = 0; i <= 100; i++) {
-                if (i % n == 0) {
-                    licznik++;
-                }
-            }
+    /*if (a > b) {
+        for (int i = b; i <= a; i++) {
+
         }
-
-        cout << "Ilosc liczb podzielnych przez " << n << ": " << licznik << endl;;
-    } while (n > 100 || n < 0);
+    }*/
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
