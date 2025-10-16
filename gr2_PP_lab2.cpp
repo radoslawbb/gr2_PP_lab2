@@ -1,6 +1,7 @@
 // gr2_PP_lab2.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
+#include <iostream>
+using namespace std;
 
 //laboratorium 2
 
@@ -186,20 +187,108 @@ int main() {
 }*/
 
 //zadanie 11
-#include <iostream>
-using namespace std;
-int main() {
+
+/*int main() {
     int a, b;
     cout << "Wprowadz a: ";
     cin >> a;
     cout << "\nWprowadz b: ";
     cin >> b;
 
-    /*if (a > b) {
-        for (int i = b; i <= a; i++) {
-
+    if (a < b) {
+        for (int i = a; i <= b; i++) {
+            if (i % 3 == 0) {
+                cout << i << endl;
+            }
         }
-    }*/
+    }
+    else if (b < a) {
+        for (int i = b; i <= a; i++) {
+            if (i % 3 == 0) {
+                cout << i << endl;
+            }
+        }
+    }
+}*/
+
+//zadanie 12
+
+/*int main() {
+    int n;
+    float x, sum, avg;
+    sum = 0;
+    cout << "Wprowadz liczbe n: ";
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        cout << "\nWprowadz liczbe rzeczywista: ";
+        cin >> x;
+        sum += x;
+    }
+    avg = sum / n;
+
+    cout << "\nSrednia arytmetyczna wynosi: " << avg;
+}*/
+
+//zadanie 13
+
+/*int main() {
+    for (int i = 100; i >= 0; i--) {
+        cout << i << endl;
+    }
+}*/
+
+//zadanie 14
+
+/*int main() {
+    int x, y, z;
+    cout << "Podaj liczbe 1: ";
+    cin >> x;
+    cout << "\nPodaj liczbe 2: ";
+    cin >> y;
+    cout << "\nPodaj liczbe 3: ";
+    cin >> z;
+    
+    if (x < y && x < z) {
+        cout << "Najmniejsza z tych liczb to liczba: " << x;
+    }
+    else if (y < x && y < z) {
+        cout << "Najmniejsza z tych liczb to liczba: " << y;
+    }
+    else if (z < x && z < y) {
+        cout << "Najmniejsza z tych liczb to liczba: " << z;
+    }
+}*/
+
+//zadanie 15
+
+/*int main() {
+    int n, m, los;
+    cout << "Podaj ile liczb ma byc wylosowanych: ";
+    cin >> n;
+    cout << "\nPodaj liczbe m w przedziale [0,m]: ";
+    cin >> m;
+
+    for (int i = 0; i <= n; i++) {
+        los = rand() % (m+1);
+        cout << los << endl;;
+    }
+}*/
+
+//zadanie 16
+
+int main() {
+    int sl, licz, los;
+    cout << "Podaj szczesliwy numerek: ";
+    cin >> sl;
+    licz = 0;
+
+    for (int i = 0; i < 10; i++) {
+        los = rand() % 10 + 1;
+        cout << los << endl;
+        if (los == sl) licz++;
+    }
+
+    cout << "Ile razy wystapil szczesliwy numerek: " << licz;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
